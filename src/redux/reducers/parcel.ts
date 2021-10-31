@@ -72,15 +72,24 @@ export const parcel = (state = initialState, action: any) => {
 
     case actions.UPDATE_PARCEL_REQUEST_SUCCESS:
       const parcelDataUpdate = action.data;
-      const parcelList: any = state.parcels;
+      
+      const parcelList:any = state.parcels;
+      const parcelBikerList:any = state.parcelsBiker;
+
       let parcelToUpdate = parcelList.findIndex(
         (e: any) => e.id === parcelDataUpdate.id
+      )
+      let parcelBikerToUpdate = parcelBikerList.findIndex(
+        (e: any) => e.id === parcelDataUpdate.id
       );
+      
       parcelList[parcelToUpdate] = parcelDataUpdate;
+      parcelBikerList[parcelBikerToUpdate] = parcelDataUpdate;
       return {
         ...state,
         isLoading: false,
         parcels: [...parcelList],
+        parcelsBiker: [...parcelBikerList]
       };
 
     case actions.UPDATE_PARCEL_REQUEST_FAIL:

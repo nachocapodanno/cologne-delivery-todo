@@ -22,15 +22,15 @@ import css from "./css.module.scss";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
-  const isLoading = useSelector((state: RootState) => state.auth.isLoading);
-  const parcels = useSelector((state: RootState) => state.parcel.parcels);
-  const parcelsBiker = useSelector((state: RootState) => state.parcel.parcelsBiker);
-  const errorMessage = useSelector((state: RootState) => state.parcel.errorMessage);
+  const isLoading = useSelector((state: any) => state.auth.isLoading);
+  const parcels = useSelector((state: any) => state.parcel.parcels);
+  const parcelsBiker = useSelector((state: any) => state.parcel.parcelsBiker);
+  const errorMessage = useSelector((state: any) => state.parcel.errorMessage);
   const showSideContainer = useSelector(
-    (state: RootState) => state.parcel.showSideContainer
+    (state: any) => state.parcel.showSideContainer
   );
 
-  const editDataForm = useSelector((state: RootState) => state.parcel.editData);
+  const editDataForm = useSelector((state: any) => state.parcel.editData);
 
   useEffect(() => {
     dispatch(actions.findAll());
