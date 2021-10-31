@@ -1,0 +1,39 @@
+.navLink {
+    font-size: 0.7rem;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .navLink {
+    font-size: 0.7rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+}
+
+
