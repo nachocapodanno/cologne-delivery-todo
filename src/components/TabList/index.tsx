@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import DashboardRow from "../DashboardRow";
+import DashboardRow from "../TabCard";
 
 const TabList = (props: any) => {
   const items = props.items;
