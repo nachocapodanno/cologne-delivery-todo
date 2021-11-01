@@ -4,7 +4,7 @@ import Routes from './routes';
 import Layout from '../components/Layout'
 import { Suspense } from 'react';
 import { PrivateRoute } from '../components/PrivateRoute';
-import Dashboard from '../views/Dashboard/presentational';
+import Dashboard from '../views/Home/presentational';
 
 export default function Router() {
   // const { roleRoutes = 'public' } = useSelector(({ AppReducer = {} }) => AppReducer);

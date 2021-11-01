@@ -20,8 +20,8 @@ const ParcelEditForm = ({ action, status }: any) => {
     <div className="d-flex justify-content-center align-items-center container ">
       <Row>
         <Form onSubmit={submit}>
-          <Row>
-            <Col sm={8}>
+          <Row className="d-flex justify-content-center">
+            <Col sm={12} xs={6} className="d-flex justify-content-center">
               <Form.Select
                 value={parcelStatus}
                 aria-label="Default select example"
@@ -38,8 +38,8 @@ const ParcelEditForm = ({ action, status }: any) => {
                   })}
               </Form.Select>
             </Col>
-            <Col sm={2}>
-              <Button type="submit">Update</Button>
+            <Col sm={2} className="d-flex justify-content-center">
+              <Button className="mt-3" type="submit">Update</Button>
             </Col>
           </Row>
         </Form>

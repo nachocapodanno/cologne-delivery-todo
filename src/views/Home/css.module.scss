@@ -8,6 +8,10 @@
   margin-top: 3vh;
 }
 
+.tabText {
+  text-transform: uppercase;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .navLink {

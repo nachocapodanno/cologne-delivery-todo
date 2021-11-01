@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   Col,
   Container,
@@ -6,17 +6,13 @@ import {
   Offcanvas,
   Row,
   Tab,
-  Table,
-  Tabs,
 } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Emoji from "../../components/Emoji";
 import ParcelEditForm from "../../components/ParcelEditForm";
 import TabList from "../../components/TabList";
 import * as actions from "../../redux/actions/parcel";
-import { RootState } from "../../redux/reducers";
 import ParcelStatus from "../../utils/enums/parcelStatus";
-import parcelStatus from "../../utils/literals/parcelStatus";
 import SessionManager from "../../utils/sessionManager";
 import css from "./css.module.scss";
 
@@ -138,7 +134,7 @@ const Dashboard = () => {
         style={{ height: "35vh" }}
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>New Parcel</Offcanvas.Title>
+          <Offcanvas.Title>Update Parcel Status</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ParcelEditForm action={handleUpdate} status={editDataForm.status} />

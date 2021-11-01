@@ -2,3 +2,30 @@
     background-color: #d9dde0f8;
     cursor: pointer;
 }
+
+.titleInfo{
+    font-weight: bolder;
+}
+.listValue {
+    padding: 0 !important;
+}
+
+
+.listBox {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem !important;
+    margin-top: 1vh;
+    text-align: justify;
+    padding-left: 0.8vh !important;
+}
+
+.itemKey {
+    font-weight: bold;
+}
+
+.cardNew {
+    border-radius: 0.5rem !important;
+    margin-bottom: 1.5vh;
+    box-shadow: 0 2px 20px #d1d5dd;
+    border: 0 !important;
+}

@@ -1,3 +1,4 @@
+import { Col, Container, Row } from "react-bootstrap";
 import DashboardRow from "../DashboardRow";
 
 const TabList = (props: any) => {
@@ -12,9 +13,15 @@ const TabList = (props: any) => {
             </div>{" "}
           </div>
         ) : (
-          items.map((value: any, key: any) => {
-            return <DashboardRow key={key} item={value} />;
-          })
+          <Container fluid>
+            <Row xs={12} className="d-flex justify-content-center mt-3">
+              <Col xs={12} md="auto">
+                {items.map((value: any, key: any) => {
+                  return <DashboardRow key={key} item={value} />;
+                })}
+              </Col>
+            </Row>
+          </Container>
         )
       ) : (
         <div className="container py-5">

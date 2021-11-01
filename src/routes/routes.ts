@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import Dashboard from '../views/Dashboard/presentational';
+import Dashboard from '../views/Home/presentational';
 
 const Login = lazy(() => import('../views/Login/presentational'));
 
